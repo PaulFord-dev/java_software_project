@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="438.0" prefWidth="442.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="wgu.c195pa.controller.CustomerEditorController">
+    <children>
+        <Button layoutX="195.0" layoutY="354.0" mnemonicParsing="false" onAction="#SaveButton" text="Save" />
+        <Button layoutX="292.0" layoutY="354.0" mnemonicParsing="false" onAction="#CancelButton" text="Cancel" />
+        <Label layoutX="87.0" layoutY="68.0" text="Customer ID" />
+        <TextField fx:id="customerIdField" editable="false" layoutX="195.0" layoutY="64.0" style="-fx-background-color: lightgrey;" />
+        <TextField fx:id="customerNameField" layoutX="195.0" layoutY="106.0" />
+        <TextField fx:id="customerAddressField" layoutX="195.0" layoutY="190.0" />
+        <TextField fx:id="postalCodeField" layoutX="195.0" layoutY="227.0" />
+        <TextField fx:id="phoneNumberField" layoutX="195.0" layoutY="148.0" />
+        <Label layoutX="85.0" layoutY="110.0" text="Customer Name" />
+        <Label layoutX="85.0" layoutY="194.0" text="Customer Address" />
+        <Label layoutX="84.0" layoutY="231.0" prefHeight="17.0" prefWidth="74.0" text="Postal Code" />
+        <Label layoutX="87.0" layoutY="152.0" text="Phone Number" />
+        <ComboBox fx:id="stateSelectionBox" layoutX="195.0" layoutY="308.0" onMouseClicked="#stateBoxSelected" prefWidth="150.0" />
+        <Label layoutX="83.0" layoutY="312.0" text="State/Province" />
+        <ComboBox fx:id="countrySelectionBox" layoutX="195.0" layoutY="267.0" prefWidth="150.0" />
+        <Label layoutX="84.0" layoutY="271.0" text="Country" />
+      <Label layoutX="85.0" layoutY="23.0" text="Customer Editor">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+    </children>
+</AnchorPane>

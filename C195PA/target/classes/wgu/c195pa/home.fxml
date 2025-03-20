@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="homePane" prefHeight="359.0" prefWidth="233.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="wgu.c195pa.controller.HomeController">
+   <children>
+      <Button layoutX="59.0" layoutY="111.0" mnemonicParsing="false" onAction="#viewAppointments" text="View Appointments" />
+      <Button layoutX="69.0" layoutY="161.0" mnemonicParsing="false" onAction="#viewCustomers" text="View Customers" />
+      <Button layoutX="74.0" layoutY="211.0" mnemonicParsing="false" onAction="#viewReports" text="View Reports" />
+      <Label layoutX="91.0" layoutY="54.0" text="Home">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Button layoutX="90.0" layoutY="260.0" mnemonicParsing="false" onAction="#logoutButton" text="Logout" />
+   </children>
+</AnchorPane>

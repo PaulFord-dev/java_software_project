@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="240.0" prefWidth="321.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="wgu.c195pa.controller.ReportsController">
+   <children>
+      <Label layoutX="128.0" layoutY="42.0" text="Reports">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="126.0" layoutY="86.0" text="Select Report" />
+      <ComboBox fx:id="reportsBox" layoutX="87.0" layoutY="124.0" onAction="#selectReport" prefWidth="150.0" />
+      <Button layoutX="142.0" layoutY="176.0" mnemonicParsing="false" onAction="#backButton" text="Back" />
+   </children>
+</AnchorPane>

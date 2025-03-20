@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="500.0" prefWidth="1032.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="wgu.c195pa.controller.ApptMonthTypeReportController">
+   <children>
+      <Label layoutX="25.0" layoutY="41.0" text="Appointments By Month and Type">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="typeBox" layoutX="186.0" layoutY="121.0" prefWidth="150.0" />
+      <ComboBox fx:id="monthBox" layoutX="186.0" layoutY="84.0" prefWidth="150.0" />
+      <Label layoutX="25.0" layoutY="88.0" text="Select Appointment Month" />
+      <Label layoutX="25.0" layoutY="125.0" text="Select Appointment Type" />
+      <TableView fx:id="appointmentTable" layoutX="26.0" layoutY="231.0" prefHeight="177.0" prefWidth="981.0">
+         <columns>
+            <TableColumn fx:id="appointmentIDColumn" prefWidth="100.0" text="Appointment_ID" />
+            <TableColumn fx:id="titleColumn" prefWidth="50.0" text="Title" />
+            <TableColumn fx:id="descriptionColumn" prefWidth="178.0" text="Description" />
+            <TableColumn fx:id="locationColumn" minWidth="4.4000244140625" prefWidth="87.0" text="Location" />
+            <TableColumn fx:id="contactColumn" prefWidth="76.0" text="Contact_ID" />
+            <TableColumn fx:id="typeColumn" prefWidth="106.0" text="Type" />
+            <TableColumn fx:id="startDateColumn" prefWidth="155.0" text="Start Date/Time" />
+            <TableColumn fx:id="endDateColumn" minWidth="9.20001220703125" prefWidth="150.0" text="End Date/Time" />
+            <TableColumn fx:id="customerIDColumn" minWidth="6.39996337890625" prefWidth="77.199951171875" text="Customer_ID" />
+         </columns>
+      </TableView>
+      <Label fx:id="returnedReportsNumber" layoutX="25.0" layoutY="203.0" prefHeight="17.0" prefWidth="144.0" text="Reports Returned: " />
+      <Button layoutX="26.0" layoutY="426.0" mnemonicParsing="false" onAction="#backButton" text="Back" />
+      <Button layoutX="25.0" layoutY="162.0" mnemonicParsing="false" onAction="#showAppointments" text="Show Appointments" />
+   </children>
+</AnchorPane>

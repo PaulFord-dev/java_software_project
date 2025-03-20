@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="367.0" prefWidth="1011.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="wgu.c195pa.controller.AppointmentsController">
+   <children>
+      <TableView fx:id="appointmentTable" layoutX="14.0" layoutY="79.0" prefHeight="177.0" prefWidth="981.0">
+         <columns>
+            <TableColumn fx:id="appointmentIDColumn" prefWidth="100.0" text="Appointment_ID" />
+            <TableColumn fx:id="titleColumn" prefWidth="50.0" text="Title" />
+            <TableColumn fx:id="descriptionColumn" prefWidth="178.0" text="Description" />
+            <TableColumn fx:id="locationColumn" minWidth="4.4000244140625" prefWidth="87.0" text="Location" />
+            <TableColumn fx:id="contactColumn" prefWidth="76.0" text="Contact_ID" />
+            <TableColumn fx:id="typeColumn" prefWidth="106.0" text="Type" />
+            <TableColumn fx:id="startDateColumn" prefWidth="155.0" text="Start Date/Time" />
+            <TableColumn fx:id="endDateColumn" minWidth="9.20001220703125" prefWidth="150.0" text="End Date/Time" />
+            <TableColumn fx:id="customerIDColumn" minWidth="6.39996337890625" prefWidth="77.199951171875" text="Customer_ID" />
+         </columns>
+      </TableView>
+      <RadioButton layoutX="790.0" layoutY="41.0" mnemonicParsing="false" onAction="#selectAll" selected="true" text="All">
+         <toggleGroup>
+            <ToggleGroup fx:id="apptToggle" />
+         </toggleGroup></RadioButton>
+      <RadioButton layoutX="860.0" layoutY="41.0" mnemonicParsing="false" onAction="#selectWeek" text="Week" toggleGroup="$apptToggle" />
+      <RadioButton layoutX="935.0" layoutY="41.0" mnemonicParsing="false" onAction="#selectMonth" text="Month" toggleGroup="$apptToggle" />
+      <Label layoutX="14.0" layoutY="39.0" text="Appointments">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Button layoutX="14.0" layoutY="274.0" mnemonicParsing="false" onAction="#addAppointment" text="Add" />
+      <Button layoutX="68.0" layoutY="274.0" mnemonicParsing="false" onAction="#updateAppointment" text="Update" />
+      <Button layoutX="141.0" layoutY="274.0" mnemonicParsing="false" onAction="#deleteAppointment" text="Delete" />
+      <Button layoutX="946.0" layoutY="274.0" mnemonicParsing="false" onAction="#backButton" text="Home" />
+   </children>
+</AnchorPane>
